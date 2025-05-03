@@ -2,32 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
-<style>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;600&display=swap');
 
     body {
       margin: 0;
       font-family: 'Quicksand', sans-serif;
       color: #e3e3e3;
-      text-align: center;
       background: #000;
       overflow: hidden;
       cursor: url('crosshair.cur'), crosshair;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
+      height: 100vh;
+      padding: 0;
+      text-align: center;
     }
 
     body::before {
@@ -46,12 +39,8 @@
     }
 
     @keyframes bgScroll {
-      0% {
-        background-position: center 0%;
-      }
-      100% {
-        background-position: center 100%;
-      }
+      0% { background-position: center 0%; }
+      100% { background-position: center 100%; }
     }
 
     a {
@@ -89,9 +78,10 @@
 </head>
 
 <body>
-    <a href="game.html">test tiny choice</a>
+  <a href="game.html" class="flicker">test tiny choice</a>
 </body>
 
 </html>
+
 
 

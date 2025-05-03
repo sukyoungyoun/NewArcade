@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
-  <style>
+ <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;600&display=swap');
 
     body {
@@ -50,32 +50,8 @@
       }
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ff4d4f;
-      text-shadow: 0 0 10px #ff4d4f;
-    }
-
-    #gameArea {
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 2rem auto;
-      max-width: 800px;
-      background: rgba(20, 20, 20, 0.85);
-      padding: 2rem;
-      border: 3px solid #ff4d4f;
-      border-radius: 10px;
-      box-shadow: 0 0 30px #b80000;
-      font-family: 'Quicksand', sans-serif;
-      color: #f8f8f8;
-      position: relative;
-      backdrop-filter: blur(6px);
-    }
-
     a {
       display: inline-block;
-      margin: 1rem 0.5rem;
       font-size: 14px;
       font-family: 'Press Start 2P', cursive;
       color: #fff;
@@ -106,19 +82,23 @@
       }
     }
 
-    /* 🌐 Mobile-only centering */
+    /* Wrapper to position the button */
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Mobile-only: push button toward bottom */
     @media (max-width: 768px) {
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      .wrapper {
+        justify-content: flex-end;
         align-items: center;
-        min-height: 100vh;
-        padding: 1rem;
+        padding-bottom: 3rem;
       }
 
       a {
-        margin: 0;
+        margin-bottom: 0;
       }
     }
   </style>
